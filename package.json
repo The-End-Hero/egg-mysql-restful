@@ -1,5 +1,5 @@
 {
-  "name": "mysql-restful",
+  "name": "egg-mysql-restful",
   "version": "1.0.0",
   "description": "",
   "private": true,

@@ -1,4 +1,4 @@
-# mysql-restful
+# egg-mysql-restful
 
 
 
