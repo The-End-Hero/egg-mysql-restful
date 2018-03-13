@@ -1,0 +1,2 @@
+2018-03-13 08:56:01,624 INFO 12850 [egg-logrotator] app logger reload: got log-reload message
+2018-03-13 10:19:52,279 WARN 12850 [ClusterClient:Watcher] follower closed, and try to init it again

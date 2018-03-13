@@ -1,0 +1,14 @@
+2018-03-09 13:35:39,591 INFO 96475 [Timer] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-03-10 00:00:00.000
+2018-03-09 13:35:39,592 INFO 96475 [Timer] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-03-10 00:00:01.000
+2018-03-10 10:12:12,815 INFO 7669 [Timer] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-03-11 00:00:00.000
+2018-03-10 10:12:12,816 INFO 7669 [Timer] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-03-11 00:00:01.000
+2018-03-13 08:56:00,646 INFO 7669 [152090256063750552298037598] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js triggered, send random by agent
+2018-03-13 08:56:00,668 INFO 7669 [Timer] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-03-14 00:00:00.000
+2018-03-13 08:56:00,669 INFO 12850 [152090256063750552298037598] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js task received by app
+2018-03-13 08:56:00,676 INFO 12850 [152090256063750552298037598] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2018-03-13 08:56:00,703 INFO 12850 [152090256063750552298037598] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 26ms
+2018-03-13 08:56:01,608 INFO 12850 [152090256160750553263074476] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js task received by app
+2018-03-13 08:56:01,608 INFO 12850 [152090256160750553263074476] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2018-03-13 08:56:01,621 INFO 12850 [152090256160750553263074476] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 13ms
+2018-03-13 08:56:01,607 INFO 7669 [152090256160750553263074476] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js triggered, send random by agent
+2018-03-13 08:56:01,630 INFO 7669 [Timer] /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-03-14 00:00:01.000

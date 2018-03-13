@@ -1,0 +1,771 @@
+2018-03-10 10:12:58,568 ERROR 7681 [-/127.0.0.1/-/18ms GET /user/1] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'testdb.users' doesn't exist
+    at Query.Sequence._packetToError (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Pool.query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/co/index.js:65:19)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `users` WHERE `id` = 11 LIMIT 0, 1
+code: 'ER_NO_SUCH_TABLE'
+errno: 1146
+sqlMessage: 'Table \'testdb.users\' doesn\'t exist'
+sqlState: '42S02'
+index: 0
+sql: 'SELECT * FROM `users` WHERE `id` = 11 LIMIT 0, 1'
+name: 'ER_NO_SUCH_TABLEError'
+pid: 7681
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 10:32:36,091 ERROR 7853 [-/127.0.0.1/-/22ms GET /user/1] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'testdb.users' doesn't exist
+    at Query.Sequence._packetToError (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Pool.query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/co/index.js:65:19)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `users` WHERE `id` = 11 LIMIT 0, 1
+code: 'ER_NO_SUCH_TABLE'
+errno: 1146
+sqlMessage: 'Table \'testdb.users\' doesn\'t exist'
+sqlState: '42S02'
+index: 0
+sql: 'SELECT * FROM `users` WHERE `id` = 11 LIMIT 0, 1'
+name: 'ER_NO_SUCH_TABLEError'
+pid: 7853
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 10:38:42,858 ERROR 7853 [-/127.0.0.1/-/2ms GET /user/1] nodejs.ER_NO_SUCH_TABLEError: ER_NO_SUCH_TABLE: Table 'testdb.users' doesn't exist
+    at Query.Sequence._packetToError (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Pool.query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/co/index.js:65:19)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `users` WHERE `id` = 11 LIMIT 0, 1
+code: 'ER_NO_SUCH_TABLE'
+errno: 1146
+sqlMessage: 'Table \'testdb.users\' doesn\'t exist'
+sqlState: '42S02'
+index: 0
+sql: 'SELECT * FROM `users` WHERE `id` = 11 LIMIT 0, 1'
+name: 'ER_NO_SUCH_TABLEError'
+pid: 7853
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 11:58:19,143 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 864466ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 12:40:02,729 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 682988ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 16:49:42,724 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 2196768ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 17:31:53,881 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1330962ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 18:03:45,860 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1891967ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 18:17:03,822 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 777952ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 18:30:24,784 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 780958ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 18:37:19,715 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 394927ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 18:46:33,674 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 533953ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 18:59:11,629 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 737941ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 19:09:26,589 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 594954ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 19:15:43,581 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 356982ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 19:22:01,555 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 357959ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 19:30:54,529 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 532971ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 20:09:09,486 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 2274947ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 22:10:16,617 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7203015ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-10 22:25:56,410 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 919517ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 00:26:07,273 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7210839ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 02:26:22,585 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7194938ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 02:36:17,311 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 574716ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 02:51:58,242 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 920889ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 04:52:05,453 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7206917ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 05:10:46,621 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1101136ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 15:35:08,618 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 37441964ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-11 18:22:08,981 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 10000323ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 07:44:56,123 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 48147120ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 08:01:51,213 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 994906ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 08:32:46,775 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1835110ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 09:36:48,329 ERROR 12838 [-/127.0.0.1/-/1ms GET /markdown/javascript] nodejs.SyntaxError: Identifier 'markdown' has already been declared
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at wrappedController (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:351:31)
+
+pid: 12838
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 09:38:02,371 ERROR 12845 [-/127.0.0.1/-/2ms GET /md/javascript] nodejs.SyntaxError: Identifier 'markdown' has already been declared
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at wrappedController (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:351:31)
+
+pid: 12845
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 09:38:04,672 ERROR 12845 [-/127.0.0.1/-/1ms GET /md/javascript] nodejs.SyntaxError: Identifier 'markdown' has already been declared
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at wrappedController (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:351:31)
+
+pid: 12845
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 09:38:50,206 ERROR 12845 [-/127.0.0.1/-/1ms GET /md/javascript] nodejs.SyntaxError: Identifier 'markdown' has already been declared
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/index.js:44:21)
+    at wrappedController (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/koa-router/lib/router.js:351:31)
+
+pid: 12845
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 13:41:03,072 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 3053114ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 14:31:23,454 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 879956ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 16:48:22,108 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 2097657ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 17:08:03,897 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 641690ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 17:37:17,164 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 253024ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 18:21:18,750 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 461187ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 18:38:00,426 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 981666ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 18:42:48,272 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 267835ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 18:45:43,559 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 175283ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:18:53,490 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1966628ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:34:37,916 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 500621ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:37:35,137 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 177219ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:41:21,723 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 226585ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:42:58,999 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 97273ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:48:31,587 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 332585ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:51:08,446 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 133571ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:54:45,005 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 216557ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 19:57:08,296 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 143284ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 20:05:35,756 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 467442ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 20:18:10,093 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 720037ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 20:25:36,387 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 446292ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 20:39:13,939 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 817549ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 20:42:20,510 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 186569ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 20:44:53,393 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 106590ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 21:01:28,703 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 775262ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 21:40:22,006 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1801184ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 22:37:18,783 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 3396763ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 22:46:23,941 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 545155ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-12 23:39:58,702 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 3194750ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 01:48:58,453 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7739572ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 02:00:56,078 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 697313ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 02:16:36,846 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 920762ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 04:16:46,235 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7209351ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 04:32:26,907 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 920309ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 04:39:53,179 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 446210ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 06:40:17,343 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 7203841ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 06:55:57,906 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 920554ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 08:07:42,378 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 4304463ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 08:11:01,989 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 179581ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
+2018-03-13 08:38:21,516 ERROR 7669 nodejs.ClusterClientNoResponseError: client no response in 1639099ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/wangxiping/Documents/github/egg-mysql-restful/node_modules/cluster-client/lib/leader.js:73:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 7669
+hostname: wangxipingdeMacBook-Pro.local
+
